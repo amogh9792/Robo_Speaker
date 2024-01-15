@@ -11,6 +11,8 @@ def speak_text():
 
             # Validate input to prevent potential security issues
             if x.lower() == 'q':
+                engine.say("Bye bye friend")
+                engine.runAndWait()
                 break  # Exit the loop if the user enters 'q'
             elif not x.strip():  # Check if the input is empty or contains only whitespace
                 print("Input is empty. Please enter something.")
